@@ -31,7 +31,7 @@ public class ProductService {
     protected void simulateLatency() {
         try {
 
-            long time = 20000L;
+            long time = 3000L;
             log.info("Simulating latency of {} ms", Duration.ofMillis(time));
             Thread.sleep(time);
         } catch (InterruptedException e) {

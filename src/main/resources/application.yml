@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: produtos
+  datasource:
+    url: jdbc:postgresql://localhost:5432/trade_ledger
+    username: admin
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update  # TODO: alterar para none quando pronto
+  data:
+    redis:
+      host: localhost
+      port: 6379
